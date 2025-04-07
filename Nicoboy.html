@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+<style>
+
+</style>
+	<head>
+		<title>HOME PAGE</title>
+		
+		
+		
+	
+	<body background="S.jpg";>
+		<pre><p style="font-size: 100px;">
+			<a style="color: white; text-decoration: blue;  text-align: center; font-weight: bold; padding: 10px; background-color: white;" href="page.html"></a>  
+			</p></pre>
+		<center>
+			<h1 style="font-size: 50px; color: white;">MENU/PRODUCTS</h1>
+		
+		
+	
+
+			<div style="background-color: #3c3c3c; padding: 30px; text-align: center; margin-bottom: 20px;">
+				<img src="S1.jpg" alt="product name" style="width: 200px; height: 200px; text-align: center;">
+				<h2 style="color: white; font-size: 30px">Spaghetti with Drinks (1pc)</h2>
+				<p style="color: white; font-size: 25px;">Price: 99.00</p>
+				<input type="number" id="caesar-salad-quantity" value="0" min="0">
+				<button style="background-color: #1c1c1c; border: none; padding: 10px; font-size: 20px; color: white;">Order Now</button>
+			</div>
+		
+			
+			<div class="item"></div>
+			<div style="background-color: #3c3c3c; padding: 30px; margin-bottom: 20px;">
+				<img src="W.jpg" alt="product name" style="width: 200px; height: 200px;">
+				<h2 style="color: white; font-size: 30px">Chickenjoy with Fries and Drinks (1pc)</h2>
+				<p style="color: white; font-size: 25px;">Price: 140.00</p>
+				<input type="number" id="caesar-salad-quantity" value="0" min="0">
+				<button style="background-color: #1c1c1c; border: none; padding: 10px; font-size: 20px; color: white;">Order Now</button>
+			</div>
+			
+			<div style="background-color: #3c3c3c; padding: 30px; margin-bottom: 20px;">
+				<img src="B2.jpg" alt="product name" style="width: 200px; height: 200px;">
+				<h2 style="color: white; font-size: 30px">2 Burger Steak with Drinks</h2>
+				<p style="color: white; font-size: 25px;">Price: 99.99</p>
+				<input type="number" id="caesar-salad-quantity" value="0" min="0">
+				<button style="background-color: #1c1c1c; border: none; padding: 10px; font-size: 20px; color: white;">Order Now</button>
+			</div>
+		8
+			<div style="background-color: #3c3c3c; padding: 30px; margin-bottom: 20px;">
+				<img src="z.jpg" alt="product name" style="width: 200px; height: 200px;">
+				<h2 style="color: white; font-size: 30px">Fiesta Noodles with 1pc Chicken with Drinks</h2>
+				<p style="color: white; font-size: 25px;">Price: 135</p>
+				<input type="number" id="caesar-salad-quantity" value="0" min="0">
+				<button style="background-color: #1c1c1c; border: none; padding: 10px; font-size: 20px; color: white;">Order Now</button>
+			</div>
+			
+			<div style="background-color: #3c3c3c; padding: 30px; margin-bottom: 20px;">
+				<img src="x.jpg" alt="product name" style="width: 200px; height: 200px;">
+				<h2 style="color: white; font-size: 30px">Cheesy Burger with Price and Drink</h2>
+				<p style="color: white; font-size: 25px;">Price: 99.99</p>
+				<input type="number" id="caesar-salad-quantity" value="0" min="0">
+				<button style="background-color: #1c1c1c; border: none; padding: 10px; font-size: 20px; color: white;">Order Now</button>
+			</div>
+			
+			<button onclick="calculateTotal()">Calculate Total</button>
+<p>Total: $<span id="total">0.00</span></p>
+			<script>
+function calculateTotal() {
+  let total = 0;
+  total += parseInt(document.getElementById("pizza-margherita-quantity").value) * 12.99;
+  total += parseInt(document.getElementById("spaghetti-carbonara-quantity").value) * 10.99;
+  total += parseInt(document.getElementById("caesar-salad-quantity").value) * 8.99;
+ 
+
+  document.getElementById("total").textContent = total.toFixed(2);
+}
+</script>
+
+			
+		</center>	
+
+	
+	</body>
+</html>
+
+
+
+
